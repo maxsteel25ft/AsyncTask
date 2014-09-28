@@ -3,6 +3,7 @@
               android:layout_width="fill_parent"
               android:layout_height="fill_parent"
               android:orientation="vertical" >
+
     <ProgressBar
         android:id="@+id/progressBar"
         style="?android:attr/progressBarStyleHorizontal"
@@ -12,18 +13,24 @@
         android:max="10"
         android:padding="10dip">
     </ProgressBar>
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Start Progress" >
-    </Button>
+
     <TextView android:id="@+id/output"
               android:layout_width="189dp"
               android:layout_height="80dp"
-              android:text="Replace"
+              android:text="*** 0 ***"
               android:textColor="#f4bb264d"
               android:layout_gravity="center_horizontal"
               android:textAlignment="center"
-              android:textSize="35sp"/>
+              android:textSize="35sp"
+              android:background="#9164344c"
+              android:layout_margin="10dp"
+              android:gravity="center_vertical|center_horizontal"/>
+
+    <Button
+        android:id="@+id/boton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Progress"
+        android:layout_gravity="center_horizontal">
+    </Button>
 </LinearLayout>

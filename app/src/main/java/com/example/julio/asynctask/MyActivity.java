@@ -7,20 +7,26 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.TextView;
-import android.view.View.OnClickListener;
+
+/*
+*	Modificado de un original obtenido desde la Internet
+*	Septiembre 28, 2014
+*	New York
+*/
 
 
 public class MyActivity extends Activity implements OnClickListener {
-		public int contador;
+		public int contador = 0;
 		Button btn;
 
 		@Override
 		public void onCreate(Bundle savedInstanceState) {
 			super.onCreate(savedInstanceState);
 			setContentView(R.layout.activity_my);
-			btn = (Button) findViewById(R.id.button1);
+			btn = (Button) findViewById(R.id.boton);
 			// because we implement OnClickListener we only have to pass "this"
 			// (much easier)
 			btn.setOnClickListener(this);
@@ -30,7 +36,7 @@ public class MyActivity extends Activity implements OnClickListener {
 		public void onClick(View view) {
 			// detect the view that was "clicked"
 			switch (view.getId()) {
-				case R.id.button1:
+				case R.id.boton:
 					new LongOperation().execute("");
 					contador ++;
 					break;
