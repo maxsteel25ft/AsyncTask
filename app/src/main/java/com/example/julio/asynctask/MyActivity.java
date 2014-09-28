@@ -19,7 +19,7 @@ import android.widget.TextView;
 
 
 public class MyActivity extends Activity implements OnClickListener {
-		public int contador = 0;
+	int contador = 0;
 		Button btn;
 
 		@Override
@@ -30,11 +30,12 @@ public class MyActivity extends Activity implements OnClickListener {
 			// because we implement OnClickListener we only have to pass "this"
 			// (much easier)
 			btn.setOnClickListener(this);
-			int count = 0;
+
 		}
 
 		public void onClick(View view) {
 			// detect the view that was "clicked"
+
 			switch (view.getId()) {
 				case R.id.boton:
 					new LongOperation().execute("");
