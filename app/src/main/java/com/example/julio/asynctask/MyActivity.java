@@ -12,12 +12,6 @@ import android.widget.Button;
 import android.widget.TextView;
 
 /*
-*	Modificado de un original obtenido desde la Internet
-*	Septiembre 28, 2014
-*	New York, USA.
-*/
-
-/*
 *
 * Short Description
 *
@@ -27,6 +21,8 @@ import android.widget.TextView;
 * blank lines, this is used in page-level DocBlocks and in
 * element-level DockBlocks when the element merits further discussion.
 *
+* @author	Julio Aguirre
+* @date		Sep 29, 2014
 * @since	version number
 * @param	type argument for a function and what it takes as input
 * @return	type what it returns
