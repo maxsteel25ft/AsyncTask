@@ -17,6 +17,22 @@ import android.widget.TextView;
 *	New York, USA.
 */
 
+/*
+*
+* Short Description
+*
+* Optional longer description or discussion that may contain
+* inline tags and some html markup. See the sections below for
+* more details on the possible tags and markup. Separated by
+* blank lines, this is used in page-level DocBlocks and in
+* element-level DockBlocks when the element merits further discussion.
+*
+* @since	version number
+* @param	type argument for a function and what it takes as input
+* @return	type what it returns
+*/
+
+
 public class MyActivity extends Activity implements OnClickListener {
 	int contador = 0;
 	Button btn;
